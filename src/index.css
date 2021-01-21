@@ -16,6 +16,7 @@ code {
   bottom: 0;
   width: 100%;
   padding-bottom: 3.8rem;
+  z-index: 9999;
 }
 
 
@@ -31,11 +32,8 @@ code {
   border-bottom: 2px solid teal;
 }
 
-
-
 .fixtures img{
   height: 1.5rem;
-  margin: 0rem 0.2rem 0rem 0.2rem;
 }
 
 .fixtures p{
