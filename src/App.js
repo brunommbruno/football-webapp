@@ -6,6 +6,7 @@ import{
 } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
 
 class App extends Component{
 
@@ -16,6 +17,7 @@ class App extends Component{
         <Navbar />
         <Switch>
           <Route exact path="/">
+            <Home />
           </Route>
         </Switch>
         </>

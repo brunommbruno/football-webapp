@@ -27,3 +27,27 @@ code {
   outline: none;
 }
 
+.day-tab{
+  border-bottom: 2px solid teal;
+}
+
+
+
+.fixtures img{
+  height: 1.5rem;
+  margin: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.fixtures p{
+  margin: auto;
+  margin-left: 0rem;
+  font-size: 0.7rem;
+}
+
+.fixtures .status{
+  font-size: 0.7rem;
+}
+
+.fixtures .score{
+  font-size: 1rem;
+}
