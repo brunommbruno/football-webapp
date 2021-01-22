@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/football-webapp/static/css/main.5e52159f.chunk.css",
+    "main.js": "/football-webapp/static/js/main.9b836d77.chunk.js",
+    "main.js.map": "/football-webapp/static/js/main.9b836d77.chunk.js.map",
+    "runtime-main.js": "/football-webapp/static/js/runtime-main.6a53081b.js",
+    "runtime-main.js.map": "/football-webapp/static/js/runtime-main.6a53081b.js.map",
+    "static/js/2.5f944e35.chunk.js": "/football-webapp/static/js/2.5f944e35.chunk.js",
+    "static/js/2.5f944e35.chunk.js.map": "/football-webapp/static/js/2.5f944e35.chunk.js.map",
+    "static/js/3.b6f717c0.chunk.js": "/football-webapp/static/js/3.b6f717c0.chunk.js",
+    "static/js/3.b6f717c0.chunk.js.map": "/football-webapp/static/js/3.b6f717c0.chunk.js.map",
+    "index.html": "/football-webapp/index.html",
+    "static/css/main.5e52159f.chunk.css.map": "/football-webapp/static/css/main.5e52159f.chunk.css.map",
+    "static/js/2.5f944e35.chunk.js.LICENSE.txt": "/football-webapp/static/js/2.5f944e35.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a53081b.js",
+    "static/js/2.5f944e35.chunk.js",
+    "static/css/main.5e52159f.chunk.css",
+    "static/js/main.9b836d77.chunk.js"
+  ]
+}
