@@ -6,6 +6,7 @@ import { ListGroup, Col, Row, Badge } from "react-bootstrap";
 
 class HomeFixtures extends Component{
 
+
     render(){
 
         const fixtures = this.props.fixtures;
@@ -66,6 +67,21 @@ class HomeFixtures extends Component{
                         ))}
                     </ListGroup> : null)
                 ))}  
+                    {/* styling list */}
+                    <ListGroup.Item style={{marginBottom: "2rem"}}>
+                        <Row>
+                            <Col className="col-1">
+                             </Col>
+                            <Col className="text-center col-4">
+                            </Col>
+                            <Col className="col-2">
+                            </Col>
+                            <Col className="text-center col-4">
+                            </Col>
+                            <Col className="col-1">
+                            </Col>
+                        </Row>
+                    </ListGroup.Item>
 
             </div>
         )
