@@ -25,6 +25,11 @@
 .fixtures .score{
     font-size: 1rem;
 }
+
+.fixtures .score .live-score{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
   
 .fixtures .league-group{
     margin-bottom: 0.6rem;

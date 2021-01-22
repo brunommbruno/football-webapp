@@ -49,7 +49,9 @@ class HomeFixtures extends Component{
                                     <Col className="col-2">
                                         <p className="score">
                                             {fixture.goalsHomeTeam != null ?
-                                            `${fixture.goalsHomeTeam} : ${fixture.goalsAwayTeam}`
+                                            <span className="live-score">
+                                            {fixture.goalsHomeTeam}:{fixture.goalsAwayTeam}
+                                            </span>
                                             :
                                             `${fixture.event_date.slice(11, 16)}` 
                                         }
