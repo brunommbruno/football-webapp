@@ -1,0 +1,17 @@
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 3.8rem;
+    z-index: 9999;
+}
+  
+  
+.navbar button{
+    transform: scale(1.2);
+}
+  
+.navbar button:focus {
+    outline: none;
+}

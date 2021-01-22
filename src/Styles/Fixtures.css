@@ -1,0 +1,44 @@
+.fixtures img{
+    height: 1.5rem;
+}
+  
+.fixtures p{
+    margin: auto;
+    margin-left: 0rem;
+    font-size: 0.7rem;
+}
+  
+.fixtures .status-ft{
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    background-color:rgb(5, 68, 68);
+    color: white;
+}
+  
+.fixtures .status-on{
+    font-size: 0.6rem;
+    padding: 0.3rem;
+    background-color: teal;
+    color: white;
+}
+  
+.fixtures .score{
+    font-size: 1rem;
+}
+  
+.fixtures .league-group{
+    margin-bottom: 0.6rem;
+}
+  
+.fixtures .league-title{
+    padding: 0.2rem;
+}
+  
+.fixtures .league-title img{
+    margin: 0 0.3rem 0 0rem;
+}
+  
+.fixtures .league-title p{
+    font-weight: bold;
+}
+  
