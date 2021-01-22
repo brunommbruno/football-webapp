@@ -18,8 +18,9 @@ class News extends Component{
                 </Toolbar>
                 </AppBar>
 
-                <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <div className="articles">
+                <Card className="card">
+                <Card.Img variant="top" src="https://static.reuters.com/resources/r/?m=02&d=20201229&t=2&i=1546046817&r=LYNXMPEGBS0JX&w=800" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -29,6 +30,19 @@ class News extends Component{
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
                 </Card>
+
+                                <Card className="card">
+                <Card.Img variant="top" src="https://static.reuters.com/resources/r/?m=02&d=20201229&t=2&i=1546046817&r=LYNXMPEGBS0JX&w=800" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+                </Card>
+                </div>
             </div>
         )
     }
