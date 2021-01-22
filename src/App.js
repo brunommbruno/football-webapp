@@ -7,6 +7,7 @@ import{
 
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
+import News from "./Components/News";
 
 class App extends Component{
 
@@ -18,6 +19,9 @@ class App extends Component{
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/news">
+            <News />
           </Route>
         </Switch>
         </>
