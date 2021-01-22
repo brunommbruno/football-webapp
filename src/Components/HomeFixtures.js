@@ -1,7 +1,7 @@
 import { List } from "@material-ui/core";
 import { Component } from "react";
 
-import { ListGroup, Col, Row } from "react-bootstrap";
+import { ListGroup, Col, Row, Badge } from "react-bootstrap";
 
 class HomeFixtures extends Component{
 
@@ -40,8 +40,6 @@ class HomeFixtures extends Component{
                 flag: "https://media.api-sports.io/flags/de.svg",
                 logo: "https://media.api-sports.io/football/leagues/78.png",
             },
-
-
         ]
 
         return(
@@ -61,9 +59,14 @@ class HomeFixtures extends Component{
                             <ListGroup.Item>
                                 <Row>
                                     <Col className="col-1">
-                                        <p className="status">
-                                            {fixture.statusShort}
-                                        </p>
+                                            {fixture.statusShort === "FT" ? 
+                                                <Badge  className="status-ft">FT</Badge>
+                                                :
+                                                fixture.statusShort === "NS" ?
+                                                <Badge></Badge>
+                                                :
+                                                <Badge className="status-on blink">{fixture.elapsed}</Badge>
+                                            }
                                     </Col>
                                     <Col className="text-center col-4">
                                         <p>{fixture.homeTeam.team_name}</p>

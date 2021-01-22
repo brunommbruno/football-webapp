@@ -42,8 +42,18 @@ code {
   font-size: 0.7rem;
 }
 
-.fixtures .status{
-  font-size: 0.7rem;
+.fixtures .status-ft{
+  font-size: 0.6rem;
+  padding: 0.3rem;
+  background-color:rgb(5, 68, 68);
+  color: white;
+}
+
+.fixtures .status-on{
+  font-size: 0.6rem;
+  padding: 0.3rem;
+  background-color: teal;
+  color: white;
 }
 
 .fixtures .score{
@@ -70,4 +80,21 @@ code {
   position: absolute;
   top: 40%;
   left: 45%;
+}
+
+@keyframes blinking{
+  0% {
+    background-color: teal;
+  }
+  50%{
+    background-color:rgb(3, 184, 184);
+  }
+
+  100% {
+    background-color: teal;
+  }
+}
+
+.blink {
+  animation: blinking 3s infinite;
 }
