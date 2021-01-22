@@ -3,7 +3,7 @@ import { Component } from "react";
 
 import { ListGroup, Col, Row } from "react-bootstrap";
 
-class Fixtures extends Component{
+class HomeFixtures extends Component{
 
     render(){
 
@@ -53,7 +53,7 @@ class Fixtures extends Component{
                     <ListGroup className="league-group">
                         <ListGroup.Item style={{paddingTop: "0.3rem"}}>
                             <Row className="league-title">
-                                <img style={{height: "1rem"}}src={league.logo} />
+                                <img style={{height: "1rem"}} src={league.logo} alt="league logo"/>
                                 <p> - {league.league_name}</p>
                             </Row>
                         </ListGroup.Item>
@@ -61,14 +61,22 @@ class Fixtures extends Component{
                             <ListGroup.Item>
                                 <Row>
                                     <Col className="col-1">
-                                    <p className="status">{fixture.statusShort}</p>
+                                        <p className="status">
+                                            {fixture.statusShort}
+                                        </p>
                                     </Col>
                                     <Col className="text-center col-4">
-                                    <p>{fixture.homeTeam.team_name}</p>
-                                    <img src={fixture.homeTeam.logo}/>
+                                        <p>{fixture.homeTeam.team_name}</p>
+                                        <img src={fixture.homeTeam.logo} alt="home team logo"/>
                                     </Col>
                                     <Col className="col-2">
-                                    <p className="score">{fixture.goalsHomeTeam != null ? fixture.goalsHomeTeam :"?"} : {fixture.goalsAwayTeam != null ? fixture.goalsAwayTeam :"?"}</p>
+                                        <p className="score">
+                                            {fixture.goalsHomeTeam != null ?
+                                            `${fixture.goalsHomeTeam} : ${fixture.goalsAwayTeam}`
+                                            :
+                                            `${fixture.event_date.slice(11, 16)}` 
+                                        }
+                                        </p>
                                     </Col>
                                     <Col className="text-center col-4">
                                     <p>{fixture.awayTeam.team_name}</p>
@@ -88,4 +96,4 @@ class Fixtures extends Component{
 
 }
 
-export default Fixtures;
+export default HomeFixtures;

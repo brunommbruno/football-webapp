@@ -2,7 +2,7 @@ import { CollectionsBookmark } from "@material-ui/icons";
 import { Component } from "react";
 import axios from "../axios";
 import DayTab from "./DayTab";
-import Fixtures from "./Fixtures";
+import HomeFixtures from "./HomeFixtures";
 import LoadingAnim from "./LoadingAnim";
 
 class Home extends Component{
@@ -46,7 +46,7 @@ class Home extends Component{
                 />
                 {/* Fixtures component will only load once get request has been sucessful */}
                 {this.state.loaded ? 
-                <Fixtures 
+                <HomeFixtures 
                     fixtures={this.state.fixtures}
                 />
                 :
