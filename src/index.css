@@ -48,4 +48,21 @@ code {
 
 .fixtures .score{
   font-size: 1rem;
+  padding-left: 0.4rem;
+}
+
+.fixtures .league-group{
+  margin-bottom: 0.6rem;
+}
+
+.fixtures .league-title{
+  padding: 0.2rem;
+}
+
+.fixtures .league-title img{
+  margin: 0 0.3rem 0 0rem;
+}
+
+.fixtures .league-title p{
+  font-weight: bold;
 }
