@@ -55,9 +55,6 @@ class Home extends Component{
                         <Typography variant="h6">
                         Matches
                         </Typography>
-                        <div className="clock">
-                            <span className="time blink-time">{this.state.currentTime}</span>
-                        </div>
                     </Toolbar>
                 </AppBar>
 
