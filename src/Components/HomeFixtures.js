@@ -1,6 +1,5 @@
-import { List } from "@material-ui/core";
 import { Component } from "react";
-import  {LeagueObjs} from "./LeagueObjs";
+import { LeagueObjs } from "./LeagueObjs";
 
 import { ListGroup, Col, Row, Badge } from "react-bootstrap";
 
@@ -12,7 +11,7 @@ class HomeFixtures extends Component{
         const fixtures = this.props.fixtures;
 
         LeagueObjs.forEach(league => {
-            let fixtures_filtered = fixtures.filter(fixture => fixture.league_id == league.league_id);
+            let fixtures_filtered = fixtures.filter(fixture => fixture.league_id === league.league_id);
 
             league.fixtures = fixtures_filtered;
         });
@@ -58,7 +57,7 @@ class HomeFixtures extends Component{
                                     </Col>
                                     <Col className="text-center col-4">
                                     <p>{fixture.awayTeam.team_name}</p>
-                                    <img src={fixture.awayTeam.logo}/>
+                                    <img src={fixture.awayTeam.logo} alt="away team logo"/>
                                     </Col>
                                     <Col className="col-1">
                                     </Col>
