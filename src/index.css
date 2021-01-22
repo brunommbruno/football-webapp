@@ -12,6 +12,7 @@ code {
 
 @import "./Styles/Navbar.css";
 @import "./Styles/Fixtures.css";
+@import "./Styles/News.css";
 
 .day-tab{
   border-bottom: 2px solid teal;

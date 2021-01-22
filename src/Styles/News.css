@@ -1,0 +1,15 @@
+.news{
+    
+}
+
+.news .appbar{
+    background-color: teal;
+}
+
+.news button{
+    background-color: teal;
+}
+
+.news .appbar button:focus {
+    outline: none;
+}
