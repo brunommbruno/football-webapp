@@ -7,19 +7,6 @@ export const NewsObjs = [
             "author": "Reuters Staff",
             "title": "Soccer-Diego Costa rescinds contract with Atletico - club statement - Reuters UK",
             "description": "Atletico Madrid have agreed to rescind striker Diego Costa's contract, the La Liga leaders said on Tuesday.",
-            "url": "https://uk.reuters.com/article/uk-soccer-spain-atm-get-preview-idUKKBN293128",
-            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20201229&t=2&i=1546046817&r=LYNXMPEGBS0JX&w=800",
-            "publishedAt": "2020-12-29T12:19:00Z",
-            "content": "By Reuters Staff\r\nFILE PHOTO: Soccer Football - La Liga Santander - Atletico Madrid v Granada - Wanda Metropolitano, Madrid, Spain - September 27, 2020. Atletico Madrid's Diego Costa celebrates scori… [+391 chars]"
-        },
-        {
-            "source": {
-                "id": "reuters",
-                "name": "Reuters"
-            },
-            "author": "Reuters Staff",
-            "title": "Soccer-Diego Costa rescinds contract with Atletico - club statement - Reuters UK",
-            "description": "Atletico Madrid have agreed to rescind striker Diego Costa's contract, the La Liga leaders said on Tuesday.",
             "url": "https://in.reuters.com/article/uk-soccer-spain-atm-get-preview-idUKKBN293128",
             "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20201229&t=2&i=1546046817&r=LYNXMPEGBS0JX&w=800",
             "publishedAt": "2020-12-29T12:19:00Z",
@@ -37,19 +24,6 @@ export const NewsObjs = [
             "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210104&t=2&i=1546488435&r=LYNXMPEH0300X&w=800",
             "publishedAt": "2021-01-04T01:01:00Z",
             "content": "By Reuters Staff\r\nMADRID (Reuters) - Talking points from the weekend in Spanish football.\r\nFILE PHOTO: Soccer Football - La Liga Santander - Real Madrid v Celta Vigo - Estadio Alfredo Di Stefano, Mad… [+2532 chars]"
-        },
-        {
-            "source": {
-                "id": "reuters",
-                "name": "Reuters"
-            },
-            "author": "Reuters Staff",
-            "title": "Athletic Bilbao sack coach Garitano hours after beating Elche - Reuters India",
-            "description": "La Liga side Athletic Bilbao said on Sunday that they have sacked coach Gaizka Garitano, only hours after their 1-0 victory at home over Elche.",
-            "url": "https://www.reuters.com/article/soccer-spain-atb-garitano-idINKBN2980HV",
-            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210103&t=2&i=1546468980&r=LYNXMPEH0209B&w=800",
-            "publishedAt": "2021-01-03T17:21:00Z",
-            "content": "By Reuters Staff\r\nSoccer Football - La Liga Santander - Real Madrid v Athletic Bilbao - Estadio Alfredo Di Stefano, Madrid, Spain - December 15, 2020 Athletic Bilbao coach Gaizka Garitano REUTERS/Ser… [+497 chars]"
         },
         {
             "source": {
