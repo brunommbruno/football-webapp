@@ -29,7 +29,7 @@ class Navbar extends Component{
         const selectedStyle = {borderTop: "2px solid teal"}
 
         return(
-            <BottomNavigation className="navbar">
+            <BottomNavigation className="navbar" style={{overflow: "hidden", position: "fixed", bottom: "0"}}>
                 <BottomNavigationAction  
                     onClick={(value) => this.handleChange("")} 
                     icon={<HomeIcon />}
