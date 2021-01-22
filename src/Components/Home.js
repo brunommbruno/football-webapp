@@ -11,11 +11,15 @@ class Home extends Component{
     constructor(props){
         super(props);
 
-        let today = new Date().toISOString().slice(0, 10)
+        const day = new Date();
+        const today = day.toISOString().slice(0, 10)
+        const hour = day.getHours();
+        const min = day.getMinutes();
 
         this.state = {
             fixtures: [],
             currentDate: `${today}`,
+            currentTime: `${hour}:${min}`,
             loaded: false,
         }
 
@@ -51,6 +55,9 @@ class Home extends Component{
                         <Typography variant="h6">
                         Matches
                         </Typography>
+                        <div className="clock">
+                            <span className="time blink-time">{this.state.currentTime}</span>
+                        </div>
                     </Toolbar>
                 </AppBar>
 
