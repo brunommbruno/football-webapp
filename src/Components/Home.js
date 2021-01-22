@@ -1,5 +1,7 @@
 import { Component } from "react";
 import axios from "../axios";
+import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import MenuIcon from '@material-ui/icons/Menu';
 import DayTab from "./DayTab";
 import HomeFixtures from "./HomeFixtures";
 import LoadingAnim from "./LoadingAnim";
@@ -40,6 +42,18 @@ class Home extends Component{
 
         return(
             <div className="home">
+
+                <AppBar position="static" className="appbar">
+                    <Toolbar>
+                        <IconButton edge="start" color="inherit" aria-label="menu">
+                        <MenuIcon />
+                        </IconButton>
+                        <Typography variant="h6">
+                        Matches
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+
                 <DayTab 
                     changeDate={this.changeDate}
                 />

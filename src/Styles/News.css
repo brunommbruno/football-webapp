@@ -12,8 +12,15 @@
     margin-bottom: 4rem;
 }
 
+
 .news .appbar{
     background-color: teal;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    
 }
 
 .news button{

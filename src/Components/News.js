@@ -20,8 +20,8 @@ class News extends Component{
                 </Toolbar>
                 </AppBar>
 
+                <div className="articles">
                 {NewsObjs.map((article) => (
-                    <div className="articles">
                         <Card className="card">
                         <Card.Img variant="top" src={article.urlToImage} />
                         <Card.Body>
@@ -32,8 +32,8 @@ class News extends Component{
                             <Button variant="primary">See More</Button>
                         </Card.Body>
                         </Card>
-                    </div>
                 ))}
+                </div>
 
             </div>
         )

@@ -23,11 +23,13 @@ class DayTab extends Component{
         const dateTomorrowFormat = dateTomorrow.toJSON().slice(0,10).replace(/-/g,'-');
 
         return(
+
                 <Tabs
                     indicatorColor="primary"
                     textColor="primary"
                     variant="fullWidth"
                     className="day-tab"
+                    style={{marginTop: "3.5rem"}}
                 >
                     <Tab label="Yesterday" onClick={() => changeDate(`${dateYesterdayFormat}`)}/>
                     <Tab label="Today" onClick={() => changeDate(`${dateToday}`)}/>

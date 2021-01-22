@@ -18,12 +18,22 @@ code {
   border-bottom: 2px solid teal;
 }
 
+.home .appbar{
+  background-color: teal;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 
 .loading-div{
   position: absolute;
   top: 40%;
   left: 45%;
 }
+
 
 @keyframes blinking{
   0% {
