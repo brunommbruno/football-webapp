@@ -2,6 +2,7 @@ import { Component } from "react";
 
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import HomeIcon from '@material-ui/icons/Home';
+import ExploreIcon from '@material-ui/icons/Explore';
 import PublicIcon from '@material-ui/icons/Public';
 import SettingsIcon from '@material-ui/icons/Settings';
 
@@ -37,9 +38,14 @@ class Navbar extends Component{
                     style={selected === "" ? selectedStyle : null}
                 />
                 <BottomNavigationAction  
-                    onClick={(value) => this.handleChange("leagues")} 
+                    onClick={(value) => this.handleChange("explore")}
+                    icon={<ExploreIcon />}
+                    style={selected === "explore" ? selectedStyle : null} 
+                />
+                <BottomNavigationAction  
+                    onClick={(value) => this.handleChange("news")} 
                     icon={<PublicIcon />}
-                    style={selected === "leagues" ? selectedStyle : null} 
+                    style={selected === "news" ? selectedStyle : null} 
                 />
                 <BottomNavigationAction  
                     onClick={(value) => this.handleChange("settings")}
