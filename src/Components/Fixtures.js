@@ -48,6 +48,8 @@ class Fixtures extends Component{
             <div className="fixtures">
 
                 {leagues.map((league) => (
+                    //if league has no features it does not go through the loop
+                    (league.fixtures[0] ? 
                     <ListGroup className="league-group">
                         <ListGroup.Item style={{paddingTop: "0.3rem"}}>
                             <Row className="league-title">
@@ -77,7 +79,7 @@ class Fixtures extends Component{
                                 </Row>
                             </ListGroup.Item>
                         ))}
-                    </ListGroup>
+                    </ListGroup> : null)
                 ))}
 
             </div>

@@ -3,6 +3,7 @@ import { Component } from "react";
 import axios from "../axios";
 import DayTab from "./DayTab";
 import Fixtures from "./Fixtures";
+import LoadingAnim from "./LoadingAnim";
 
 class Home extends Component{
 
@@ -14,6 +15,7 @@ class Home extends Component{
         this.state = {
             fixtures: [],
             currentDate: `${today}`,
+            loaded: false,
         }
 
         this.getRequest = this.getRequest.bind(this);
@@ -21,8 +23,9 @@ class Home extends Component{
     }
 
      getRequest(date){
+         this.setState({loaded: false})
          axios.get(`/fixtures/date/${date}`).then(({data}) => {
-             this.setState({fixtures: data.api.fixtures})
+             this.setState({fixtures: data.api.fixtures, loaded: true})
          })
      }
 
@@ -41,9 +44,14 @@ class Home extends Component{
                 <DayTab 
                     changeDate={this.changeDate}
                 />
+                {/* Fixtures component will only load once get request has been sucessful */}
+                {this.state.loaded ? 
                 <Fixtures 
                     fixtures={this.state.fixtures}
                 />
+                :
+                <LoadingAnim />
+                }
             </div>
         )
     }

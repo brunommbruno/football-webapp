@@ -48,7 +48,6 @@ code {
 
 .fixtures .score{
   font-size: 1rem;
-  padding-left: 0.4rem;
 }
 
 .fixtures .league-group{
@@ -65,4 +64,10 @@ code {
 
 .fixtures .league-title p{
   font-weight: bold;
+}
+
+.loading-div{
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
