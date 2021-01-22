@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var w = window.innerWidth;
+
 ReactDOM.render(
+  
   <React.StrictMode>
+    {w < 700 ? 
     <App />
+    :
+    <h1 className="text-center">This App Is Currently Only Adapted For Mobile View</h1>
+    }
   </React.StrictMode>,
   document.getElementById('root')
 );
