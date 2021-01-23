@@ -14,13 +14,6 @@ export const LeagueObjs = [
             fixtures: [],
         },
         {
-            league_name: "Bundesliga",
-            league_id: 2755,
-            flag: "https://media.api-sports.io/flags/de.svg",
-            logo: "https://media.api-sports.io/football/leagues/78.png",
-            fixtures: [],
-        },
-        {
             league_name: "Serie A",
             league_id: 2857,
             flag: "https://media.api-sports.io/flags/it.svg",
@@ -60,6 +53,13 @@ export const LeagueObjs = [
             league_id: 2794,
             flag: "https://media.api-sports.io/flags/gb.svg",
             logo: "https://media.api-sports.io/football/leagues/40.png",
+            fixtures: [],
+        },
+        {
+            league_name: "Bundesliga",
+            league_id: 2755,
+            flag: "https://media.api-sports.io/flags/de.svg",
+            logo: "https://media.api-sports.io/football/leagues/78.png",
             fixtures: [],
         },
     ]

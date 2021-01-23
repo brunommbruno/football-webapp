@@ -13,6 +13,7 @@
     padding: 0.3rem;
     background-color:rgb(5, 68, 68);
     color: white;
+    margin-top: 0.7rem;
 }
   
 .fixtures .status-on{
@@ -20,10 +21,12 @@
     padding: 0.3rem;
     background-color: teal;
     color: white;
+    margin-top: 0.7rem;
 }
   
 .fixtures .score{
     font-size: 1rem;
+    margin-top: 0.6rem;
 }
 
 .fixtures .score .live-score{
@@ -46,4 +49,3 @@
 .fixtures .league-title p{
     font-weight: bold;
 }
-  
