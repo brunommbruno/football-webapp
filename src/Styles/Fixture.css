@@ -1,0 +1,52 @@
+.fixture .appbar{
+    background-color: teal;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+.fixture img{
+    height: 4rem
+}
+
+.fixture .score{
+    text-align: center;
+    margin: 0px;
+    margin-top: 5rem;
+    border-bottom: 2px solid teal;
+}
+
+.fixture .score .home-team{
+    margin-left: 1rem;
+}
+
+.fixture .score .away-team{
+    margin-right: 1rem;
+}
+
+.fixture .score .live-score{
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    font-weight: bold;
+}
+
+.fixture-tab .selected{
+    border-bottom: 2px solid teal;
+    padding-bottom: 0.1rem;
+}
+
+.fixture .stats{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.stats .col{
+    margin-bottom: 1rem;
+}
+
+.fixture .stats .badge{
+    font-size: 1rem;
+    color: black;
+}

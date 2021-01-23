@@ -13,6 +13,7 @@ code {
 @import "./Styles/Navbar.css";
 @import "./Styles/Fixtures.css";
 @import "./Styles/News.css";
+@import "./Styles//Fixture.css";
 
 .day-tab{
   border-bottom: 2px solid teal;
@@ -57,4 +58,8 @@ code {
 
 .blink {
   animation: blinking 3s infinite;
+}
+
+a{
+  color:black;
 }
