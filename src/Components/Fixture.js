@@ -3,7 +3,7 @@ import axios from "../axios";
 import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 
-import {  Row, Col } from "react-bootstrap";
+import {  Row, Col, Badge } from "react-bootstrap";
 import LoadingAnim from "./LoadingAnim";
 import FixtureTab from "./FixtureTab";
 import Stats from "./Stats";
@@ -66,7 +66,10 @@ class Fixture extends Component{
                     </Col>
                     <Col>
                         <p className="live-score">{fixture.goalsHomeTeam} - {fixture.goalsAwayTeam}</p>
-                        <p>Full Time</p>
+                        <p>{fixture.statusShort === "FT" ? "Full Time" :
+                            fixture.statusShort === "HT" ? "Half Time" :
+                            <Badge className="blink text-white">{fixture.elapsed}</Badge>
+                        }</p>
                     </Col>
                     <Col className="away-team">
                         <img src={fixture.awayTeam.logo} alt="away team logo" />
