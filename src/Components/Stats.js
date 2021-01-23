@@ -48,6 +48,66 @@ class Stats extends Component{
                         <Badge>{statistics["Total passes"].away}</Badge>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col>
+                        <Badge>{statistics["Corner Kicks"].home}</Badge>
+                        </Col>
+                        <Col><p>Corners</p>
+                        </Col>
+                        <Col>
+                        <Badge>{statistics["Corner Kicks"].away}</Badge>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                        <Badge>{statistics["Fouls"].home}</Badge>
+                        </Col>
+                        <Col><p>Fouls</p>
+                        </Col>
+                        <Col>
+                        <Badge>{statistics["Fouls"].away}</Badge>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                        <Badge>{statistics["Offsides"].home}</Badge>
+                        </Col>
+                        <Col><p>Offsides</p>
+                        </Col>
+                        <Col>
+                        <Badge>{statistics["Offsides"].away}</Badge>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                        <Badge>{statistics["Yellow Cards"].home}</Badge>
+                        </Col>
+                        <Col><p>Yellow Cards</p>
+                        </Col>
+                        <Col>
+                        <Badge>{statistics["Yellow Cards"].away}</Badge>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                        <Badge>{statistics["Red Cards"].home}</Badge>
+                        </Col>
+                        <Col><p>Red Cards</p>
+                        </Col>
+                        <Col>
+                        <Badge>{statistics["Red Cards"].away}</Badge>
+                        </Col>
+                    </Row>
+                    <Row style={{marginTop: "3rem"}}>
+                        <Col>
+                        <Badge></Badge>
+                        </Col>
+                        <Col>
+                        </Col>
+                        <Col>
+                        <Badge></Badge>
+                        </Col>
+                    </Row>
             </Container>
         )
     }
