@@ -30,6 +30,7 @@ class HomeFixtures extends Component{
                             </Row>
                         </ListGroup.Item>
                         {league.fixtures.map((fixture) => (
+                            <a href={`/#/fixtures/${fixture.fixture_id}`}>
                             <ListGroup.Item>
                                 <Row>
                                     <Col className="col-1">
@@ -65,6 +66,7 @@ class HomeFixtures extends Component{
                                     </Col>
                                 </Row>
                             </ListGroup.Item>
+                            </a>
                         ))}
                     </ListGroup> : null)
                 ))}  
