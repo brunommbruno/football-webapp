@@ -65,9 +65,16 @@ class Fixture extends Component{
                         <p>{fixture.homeTeam.team_name}</p>
                     </Col>
                     <Col>
-                        <p className="live-score">{fixture.goalsHomeTeam} - {fixture.goalsAwayTeam}</p>
+                        <p className="live-score">
+                            {fixture.statusShort === "NS" ? 
+                            `${fixture.event_date.slice(11, 16)}`
+                            :
+                            `${fixture.goalsHomeTeam} - ${fixture.goalsAwayTeam}`
+                            }
+                        </p>
                         <p>{fixture.statusShort === "FT" ? "Full Time" :
                             fixture.statusShort === "HT" ? "Half Time" :
+                            fixture.statusShort === "NS" ? "Not Started" :
                             <Badge className="blink text-white">{fixture.elapsed}</Badge>
                         }</p>
                     </Col>
