@@ -87,9 +87,14 @@ class Fixture extends Component{
                 :
                 menuSelected === "stats" ?
                 <div className="stats">
+                    {/* Stats component will break if statistics are not available yet */}
+                    {fixture.statistics ?
                     <Stats 
                         statistics={fixture.statistics}
                     />
+                    :
+                    <p>No Statistics Available Yet</p>
+                    }
                 </div>
                 :
                 menuSelected === "lineup" ?
