@@ -50,3 +50,50 @@
     font-size: 1rem;
     color: black;
 }
+
+.lineup{
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.lineup h2{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.lineup p {
+    margin: 0rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    border: 1px solid rgba(184, 184, 184, 0.308);
+    border-radius: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+ 
+.lineup .formation{
+    color: rgb(131, 131, 131);
+    position: absolute;
+    left: 5%;
+}
+
+.lineup .manager{
+    color: rgb(131, 131, 131);
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    font-size: 0.8rem;
+}
+
+.lineup .team-players{
+    margin-bottom: 2rem;
+}
+
+.lineup .player-number{
+    position: absolute;
+    right: 10%;
+}
+
+.lineup .player-name{
+    margin-left: 0.2rem;
+}

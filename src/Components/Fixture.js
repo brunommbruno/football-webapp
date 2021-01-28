@@ -7,6 +7,7 @@ import {  Row, Col, Badge } from "react-bootstrap";
 import LoadingAnim from "./LoadingAnim";
 import FixtureTab from "./FixtureTab";
 import Stats from "./Stats";
+import Lineups from "./Lineups";
 
 class Fixture extends Component{
 
@@ -69,6 +70,9 @@ class Fixture extends Component{
                             {fixture.statusShort === "NS" ? 
                             `${fixture.event_date.slice(11, 16)}`
                             :
+                            fixture.goalsHomeTeam === null ?
+                            `0 - 0`
+                            :
                             `${fixture.goalsHomeTeam} - ${fixture.goalsAwayTeam}`
                             }
                         </p>
@@ -105,9 +109,15 @@ class Fixture extends Component{
                 </div>
                 :
                 menuSelected === "lineup" ?
-                <p>lineup</p>
+                <div className="lineup">
+                    <Lineups 
+                        lineups={fixture.lineups}
+                        teamOne={fixture.homeTeam.team_name}
+                        teamTwo={fixture.awayTeam.team_name}
+                    />
+                </div>
                 :
-                null    
+                <p>No Lineup Available</p>    
             }
                 </>
             }
