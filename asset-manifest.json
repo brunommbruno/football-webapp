@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/football-webapp/static/css/main.3de57561.chunk.css",
-    "main.js": "/football-webapp/static/js/main.68e22c57.chunk.js",
-    "main.js.map": "/football-webapp/static/js/main.68e22c57.chunk.js.map",
-    "runtime-main.js": "/football-webapp/static/js/runtime-main.ff95cf27.js",
-    "runtime-main.js.map": "/football-webapp/static/js/runtime-main.ff95cf27.js.map",
-    "static/js/2.f6c34e48.chunk.js": "/football-webapp/static/js/2.f6c34e48.chunk.js",
-    "static/js/2.f6c34e48.chunk.js.map": "/football-webapp/static/js/2.f6c34e48.chunk.js.map",
-    "static/js/3.1da85fef.chunk.js": "/football-webapp/static/js/3.1da85fef.chunk.js",
-    "static/js/3.1da85fef.chunk.js.map": "/football-webapp/static/js/3.1da85fef.chunk.js.map",
+    "main.css": "/football-webapp/static/css/main.805505f1.chunk.css",
+    "main.js": "/football-webapp/static/js/main.47e29fba.chunk.js",
+    "main.js.map": "/football-webapp/static/js/main.47e29fba.chunk.js.map",
+    "runtime-main.js": "/football-webapp/static/js/runtime-main.672c52ab.js",
+    "runtime-main.js.map": "/football-webapp/static/js/runtime-main.672c52ab.js.map",
+    "static/js/2.50fd6c93.chunk.js": "/football-webapp/static/js/2.50fd6c93.chunk.js",
+    "static/js/2.50fd6c93.chunk.js.map": "/football-webapp/static/js/2.50fd6c93.chunk.js.map",
+    "static/js/3.cb2d4dcc.chunk.js": "/football-webapp/static/js/3.cb2d4dcc.chunk.js",
+    "static/js/3.cb2d4dcc.chunk.js.map": "/football-webapp/static/js/3.cb2d4dcc.chunk.js.map",
     "index.html": "/football-webapp/index.html",
-    "static/css/main.3de57561.chunk.css.map": "/football-webapp/static/css/main.3de57561.chunk.css.map",
-    "static/js/2.f6c34e48.chunk.js.LICENSE.txt": "/football-webapp/static/js/2.f6c34e48.chunk.js.LICENSE.txt"
+    "static/css/main.805505f1.chunk.css.map": "/football-webapp/static/css/main.805505f1.chunk.css.map",
+    "static/js/2.50fd6c93.chunk.js.LICENSE.txt": "/football-webapp/static/js/2.50fd6c93.chunk.js.LICENSE.txt",
+    "static/media/stadium.18ad894f.svg": "/football-webapp/static/media/stadium.18ad894f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff95cf27.js",
-    "static/js/2.f6c34e48.chunk.js",
-    "static/css/main.3de57561.chunk.css",
-    "static/js/main.68e22c57.chunk.js"
+    "static/js/runtime-main.672c52ab.js",
+    "static/js/2.50fd6c93.chunk.js",
+    "static/css/main.805505f1.chunk.css",
+    "static/js/main.47e29fba.chunk.js"
   ]
 }
