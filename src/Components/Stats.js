@@ -19,8 +19,6 @@ class Stats extends Component{
             ["Red Cards",statistics["Red Cards"]]
         ]
 
-        console.log(statistics)
-
         return(
             <Container>
                 {ordered.map((stat) => (

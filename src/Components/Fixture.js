@@ -8,6 +8,7 @@ import LoadingAnim from "./LoadingAnim";
 import FixtureTab from "./FixtureTab";
 import Stats from "./Stats";
 import Lineups from "./Lineups";
+import MatchFacts from "./MatchFacts";
 
 class Fixture extends Component{
 
@@ -17,7 +18,7 @@ class Fixture extends Component{
         this.state = {
             fixture: [],
             loaded: false,
-            menuSelected: "stats",
+            menuSelected: "match_facts",
         }
 
         this.getRequest = this.getRequest.bind(this);
@@ -94,7 +95,13 @@ class Fixture extends Component{
                 />
 
                 {menuSelected === "match_facts" ?
-                <p>match facts</p>
+                <MatchFacts 
+                    events={fixture.events}
+                    referee={fixture.referee}
+                    venue={fixture.venue}
+                    teamOne={fixture.homeTeam.team_name}
+                    teamTwo={fixture.awayTeam.team_name}
+                />
                 :
                 menuSelected === "stats" ?
                 <div className="stats">
