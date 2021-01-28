@@ -71,20 +71,8 @@ class HomeFixtures extends Component{
                     </ListGroup> : null)
                 ))}  
                     {/* styling list */}
-                    <ListGroup.Item style={{marginBottom: "2rem"}}>
-                        <Row>
-                            <Col className="col-1">
-                             </Col>
-                            <Col className="text-center col-4">
-                            </Col>
-                            <Col className="col-2">
-                            </Col>
-                            <Col className="text-center col-4">
-                            </Col>
-                            <Col className="col-1">
-                            </Col>
-                        </Row>
-                    </ListGroup.Item>
+                    <div style={{marginBottom: "5rem"}}>
+                    </div>
 
             </div>
         )

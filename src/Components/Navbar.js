@@ -37,21 +37,21 @@ class Navbar extends Component{
                     //changes styling based on if it is selected or not
                     style={selected === "" ? selectedStyle : null}
                 />
-                <BottomNavigationAction  
+                {/* <BottomNavigationAction  
                     onClick={(value) => this.handleChange("explore")}
                     icon={<ExploreIcon />}
                     style={selected === "explore" ? selectedStyle : null} 
-                />
+                /> */}
                 <BottomNavigationAction  
                     onClick={(value) => this.handleChange("news")} 
                     icon={<PublicIcon />}
                     style={selected === "news" ? selectedStyle : null} 
                 />
-                <BottomNavigationAction  
+                {/* <BottomNavigationAction  
                     onClick={(value) => this.handleChange("settings")}
                     icon={<SettingsIcon />}
                     style={selected === "settings" ? selectedStyle : null} 
-                />
+                /> */}
             </BottomNavigation>
         )
     }

@@ -131,3 +131,7 @@
 .events .goal{
     height: 3rem;
 }
+
+.events .card{
+    margin-top: 0.7rem;
+}

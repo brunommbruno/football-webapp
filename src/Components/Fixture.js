@@ -9,6 +9,7 @@ import FixtureTab from "./FixtureTab";
 import Stats from "./Stats";
 import Lineups from "./Lineups";
 import MatchFacts from "./MatchFacts";
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 class Fixture extends Component{
 
@@ -50,9 +51,11 @@ class Fixture extends Component{
 
                 <AppBar position="static" className="appbar">
                     <Toolbar>
-                        <IconButton edge="start" color="inherit" aria-label="menu">
-                        <MenuIcon />
-                        </IconButton>
+                        <KeyboardBackspaceIcon 
+                            onClick={() => window.history.back()}
+                            className="mr-3"
+                            style={{fontSize:"2rem"}}
+                        />
                         <Typography variant="h6">
                             Match
                         </Typography>
