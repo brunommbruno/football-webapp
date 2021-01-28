@@ -9,8 +9,6 @@ class Lineups extends Component{
 
         const { lineups, teamOne, teamTwo } = this.props;
 
-        console.log(lineups);
-
         return(
             <Container>
             <div className="lineup">  

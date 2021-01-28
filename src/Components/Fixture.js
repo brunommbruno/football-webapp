@@ -109,15 +109,21 @@ class Fixture extends Component{
                 </div>
                 :
                 menuSelected === "lineup" ?
-                <div className="lineup">
+                <>
+                    {fixture.lineups ? 
+                        <div className="lineup">
                     <Lineups 
                         lineups={fixture.lineups}
                         teamOne={fixture.homeTeam.team_name}
                         teamTwo={fixture.awayTeam.team_name}
                     />
-                </div>
+                    </div>
+                    :
+                    <p className="text-center mt-4">No Lineup Available Yet</p>    
+                    }
+                </>
                 :
-                <p>No Lineup Available</p>    
+                null
             }
                 </>
             }
