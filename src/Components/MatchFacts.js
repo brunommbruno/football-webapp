@@ -33,9 +33,9 @@ class MatchFacts extends Component{
                 {events ? 
                 <div className="events">
                     {events.map((event) => (
-                        <Container>
+                        <>
                         {event.teamName === teamOne ?
-                        <Row>
+                        <Row className="pl-1">
                             <Col className="col-1"><p>{event.elapsed}</p></Col>
                             <Col className="col-1">
                                 {event.type === "Goal" ?
@@ -57,7 +57,7 @@ class MatchFacts extends Component{
                             <Col className="player col-5"><p>{event.player}</p></Col>
                         </Row> 
                             :
-                        <Row className="d-flex justify-content-end away-team">
+                        <Row className="d-flex justify-content-end away-team pr-4">
                             <Col className="player col-4"><p>{event.player}</p></Col>
                             <Col className="col-1">
                             {event.type === "Goal" ?
@@ -79,7 +79,7 @@ class MatchFacts extends Component{
                             <Col className="col-1"><p>{event.elapsed}</p></Col>
                         </Row>
                             }
-                        </Container>
+                        </>
                     ))}
                 </div>
                 :
