@@ -1,31 +1,29 @@
-.news{
-    
+.news {
 }
 
-.news .card{
-    width: 100%;
-    margin-top: 1rem;
-    box-shadow: 0px 0px 3px 0px rgba(0, 128, 128, 0.5);
+.news .card {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 3px 0px rgba(0, 128, 128, 0.5);
 }
 
-.news .articles:last-child{
-    margin-bottom: 4rem;
+.news .articles:last-child {
+  margin-bottom: 4rem;
 }
 
-
-.news .appbar{
-    background-color: teal;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+.news .appbar {
+  background-color: blue;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
-.news button{
-    background-color: teal;
+.news button {
+  background-color: teal;
 }
 
 .news .appbar button:focus {
-    outline: none;
+  outline: none;
 }

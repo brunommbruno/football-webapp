@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -15,12 +15,12 @@ code {
 @import "./Styles/News.css";
 @import "./Styles//Fixture.css";
 
-.day-tab{
+.day-tab {
   border-bottom: 2px solid teal;
 }
 
-.home .appbar{
-  background-color: teal;
+.home .appbar {
+  background-color: #3a3a3a;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -28,27 +28,23 @@ code {
   z-index: 9999;
 }
 
-
-.home .clock{
+.home .clock {
   position: fixed;
   right: 3rem;
 }
 
-
-.loading-div{
+.loading-div {
   position: absolute;
   top: 40%;
   left: 45%;
 }
 
-
-
-@keyframes blinking{
+@keyframes blinking {
   0% {
     background-color: teal;
   }
-  50%{
-    background-color:rgb(3, 184, 184);
+  50% {
+    background-color: rgb(3, 184, 184);
   }
 
   100% {
@@ -60,6 +56,6 @@ code {
   animation: blinking 3s infinite;
 }
 
-a{
-  color:black;
+a {
+  color: black;
 }
