@@ -2,6 +2,8 @@ import { Component } from "react";
 
 import axios from "../axios";
 import { Col } from "react-bootstrap";
+import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 
 class League extends Component {
   constructor(props) {
@@ -32,11 +34,22 @@ class League extends Component {
   render() {
     return (
       <>
-        <h1>{this.props.id}</h1>
+        <div className="fixture">
+          <AppBar position="static" className="appbar">
+            <Toolbar>
+              <KeyboardBackspaceIcon
+                onClick={() => window.history.back()}
+                className="mr-3"
+                style={{ fontSize: "2rem" }}
+              />
+              <Typography variant="h6">Table</Typography>
+            </Toolbar>
+          </AppBar>
+        </div>
         {!this.state.loaded ? (
           <p>loading</p>
         ) : (
-          <>
+          <div style={{ marginTop: "4rem" }}>
             <div
               style={{
                 width: "100%",
@@ -79,7 +92,25 @@ class League extends Component {
                   fontSize: "0.8rem",
                 }}
               >
-                <Col xs={1}>
+                <Col
+                  xs={1}
+                  style={{
+                    borderLeft:
+                      standing.description ===
+                      "Promotion - Champions League (Group Stage)"
+                        ? "2px solid green"
+                        : standing.description ===
+                          "Promotion - Europa League (Group Stage)"
+                        ? "2px solid royalblue"
+                        : standing.description ===
+                          "Promotion - Champions League (Qualification)"
+                        ? "2px solid lightgreen"
+                        : standing.description ===
+                          "Promotion - Europa League (Qualification)"
+                        ? "2px solid CornflowerBlue"
+                        : "2px solid white",
+                  }}
+                >
                   <p>{standing.rank}</p>
                 </Col>
                 <Col xs={1}>
@@ -109,7 +140,7 @@ class League extends Component {
                 </Col>
               </div>
             ))}
-          </>
+          </div>
         )}
       </>
     );
