@@ -55,7 +55,7 @@ class Home extends Component {
           </Toolbar>
         </AppBar>
         <DayTab changeDate={this.changeDate} />
-        <h1 className="text-center">will be back for next football season!</h1>
+        {/* <h1 className="text-center">will be back for next football season!</h1> */}
         {/* Fixtures component will only load once get request has been sucessful */}
         {this.state.loaded ? (
           <HomeFixtures fixtures={this.state.fixtures} />
